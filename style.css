@@ -1,6 +1,11 @@
 
 body { padding-top: 120px; }
 
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #e72366!important;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
@@ -42,11 +47,6 @@ div#bs-example-navbar-collapse-1 {
     }
 }
 
-.navbar-default .navbar-nav > li > a:focus
-{
-    color: #f197ff;
-    background-color: transparent;
-}
 
 .panier{
   margin-right: 30px;

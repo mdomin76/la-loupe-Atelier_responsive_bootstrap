@@ -1,429 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Socks</title>
-        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- HEADER -->
-        <!-------------------------------------->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Socks</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
-                        <img alt="Best Socks" src="img/logo-socks.svg" class="logo">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav li-header">
-                        <li>
-                            <a href="#">Hommes</a>
-                        </li>
-                        <li>
-                            <a href="#">Femmes</a>
-                        </li>
-                        <li>
-                            <a href="#">Enfants</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="panier" href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>PANIER</a>
-                        </li>
-                    </ul>
-                </div>
+                <a class="navbar-brand" href="#">
+                    <img alt="Best Socks" src="img/logo-socks.svg" class="logo">
+                </a>
             </div>
-        </nav>
-        <!--SLIDER -->
-        <div class="container">
-            <div id="carousel1" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel1" data-slide-to="1"></li>
-                    <li data-target="#carousel1" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="img/107_filmandtv_desktop.jpg" alt="" />
-                    </div>
-                    <div class="item">
-                        <img src="img/star_wars_desktop2.jpg" alt="" />
-                    </div>
-                    <div class="item">
-                        <img src="img/heat_holders_desktop_banner1.jpg" alt="" />
-                    </div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-                <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav li-header">
+                    <li>
+                        <a href="#">Hommes</a>
+                    </li>
+                    <li>
+                        <a href="#">Femmes</a>
+                    </li>
+                    <li>
+                        <a href="#">Enfants</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="panier" href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>PANIER</a>
+                    </li>
+                </ul>
             </div>
-            <!-- MODAL -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/o-socks-all.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL2 -->
-            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/p2.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL3 -->
-            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/p3.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL4 -->
-            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/p4.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL5 -->
-            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/p5.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL6 -->
-            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/p6.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL7 -->
-            <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/p7.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- MODAL8 -->
-            <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <img src="img/p8.png" alt="..." class="img-modal">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <h3>Les Rayées !</h3>
-                                    <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-                            <button type="button" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- PRODUITS -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal">
-                                <img src="img/o-socks-all.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal2">
-                                <img src="img/p2.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal3">
-                                <img src="img/p3.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal4">
-                                <img src="img/p4.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal5">
-                                <img src="img/p5.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal6">
-                                <img src="img/p6.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal7">
-                                <img src="img/p7.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
-                        <div class="thumbnail">
-                            <a href="#" data-toggle="modal" data-target="#myModal8">
-                                <img src="img/p8.png" alt="..." class="imghov">
-                            </a>
-                            <div class="caption">
-                                <h3 class="text-center">Les Rayées !</h3>
-                                <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <!-- FOOTER -->
-
-      <div class="container-fluid footer">
-          <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <p>A propos | Contact | Sitemap</p>
-              </div>
-          </div>
         </div>
-            <!--  -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="bootstrap/js/bootstrap.min.js"></script>
-            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-            <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </nav>
+    <!--SLIDER -->
+    <div class="container">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/107_filmandtv_desktop.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img src="img/star_wars_desktop2.jpg" alt="" />
+                </div>
+                <div class="item">
+                    <img src="img/heat_holders_desktop_banner1.jpg" alt="" />
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+            <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+        </div>
+        <!-- MODAL -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/o-socks-all.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL2 -->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/p2.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL3 -->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/p3.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL4 -->
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/p4.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL5 -->
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/p5.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL6 -->
+        <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/p6.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL7 -->
+        <div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/p7.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MODAL8 -->
+        <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        <h4 class="modal-title" id="myModalLabel">Best Sock's</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <img src="img/p8.png" alt="..." class="img-modal">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <h3>Les Rayées !</h3>
+                                <p>Rafraîchissez votre tenue avec une paire de chaussettes rouges, blanches et bleues au motif rayé éclatant. La chance vous sourira élégamment chaque fois que vous les enfilerez. Ce modèle est tissé dans du coton peigné de
+                                    qualité supérieure pour une sensation de confort douillet qui ne se dément pas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PRODUITS -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <img src="img/o-socks-all.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal2">
+                            <img src="img/p2.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal3">
+                            <img src="img/p3.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal4">
+                            <img src="img/p4.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal5">
+                            <img src="img/p5.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal6">
+                            <img src="img/p6.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal7">
+                            <img src="img/p7.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal7"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-3 col-md-3">
+                    <div class="thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#myModal8">
+                            <img src="img/p8.png" alt="..." class="imghov">
+                        </a>
+                        <div class="caption">
+                            <h3 class="text-center">Les Rayées !</h3>
+                            <p class="text-center"><a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myModal8"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="margin-right:10px"></span>Acheter</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
 
-    </body>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>A propos | Contact | Sitemap</p>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
