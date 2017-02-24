@@ -1,0 +1,146 @@
+
+body { padding-top: 120px; }
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+div#bs-example-navbar-collapse-1 {
+    text-align: center;
+}
+@media screen and (max-width:768px){
+.panier {
+    margin: 15px;
+}}
+
+.navbar-toggle {
+    padding: 13px 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: #e72366;
+}
+
+.navbar-default .navbar-nav > li > a:hover
+{
+    color: #fff;
+    background-color: #e72366;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: #fff;
+}
+
+
+@media (min-width: 768px)
+{
+    .navbar-nav
+    {
+        float: left;
+        margin-top: 1em;
+    }
+}
+
+.navbar-default .navbar-nav > li > a:focus
+{
+    color: #f197ff;
+    background-color: transparent;
+}
+
+.panier{
+  margin-right: 30px;
+  margin-top: 1em;
+  background-color: #f90000;
+
+}
+
+.logo
+{
+    width: 75%;
+}
+
+.navbar-brand
+{
+    height: 103px;
+    padding: 0px 0px 0px 30px;
+}
+
+.navbar-default
+{
+    background-color: #7f63d2;
+    border-color: rgba(255, 255, 255, 0);
+}
+
+ul.nav.nav-tabs.nav-justified
+{
+    margin-top: 1em;
+}
+
+.nav-tabs.nav-justified
+{
+    width: 80%;
+}
+
+.li-header
+{
+    font-size: 2em;
+    color: white;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.li-header:hover
+{
+    color: white;
+}
+
+@media (min-width: 768px)
+{
+    .nav-tabs.nav-justified>li>a
+    {
+        border-bottom: 0px;
+    }
+}
+
+.nav>li>a:hover
+{
+    background-color: #e72366;
+}
+
+.nav-tabs>li>a:hover
+{
+    border-color: rgba(255, 255, 255, 0);
+}
+
+nav.navbar.navbar-default.navbar-fixed-top
+{
+    box-shadow: 0px 1px 5px 0 black;
+}
+
+.imghov
+{
+    background: rgba(255, 255, 255, 0);
+}
+
+.imghov:hover
+{
+    background: rgb(216, 216, 216);
+}
+
+.carousel
+{
+    margin-bottom: 2%;
+}
+
+.img-modal
+{
+    width: 100%;
+}
+.footer{
+  background-color: #1c162f;
+padding-top: 2%;
+padding-bottom: 1%;
+text-align: center;
+color: darkgrey;
+font-size: 1.3em;
+}
