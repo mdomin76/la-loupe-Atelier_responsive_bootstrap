@@ -15,7 +15,11 @@ div#bs-example-navbar-collapse-1 {
 @media screen and (max-width:768px){
 .panier {
     margin: 15px;
-}}
+}
+.container.produits {
+    margin-left: 0px!important;
+}
+}
 
 .navbar-toggle {
     padding: 13px 20px;
@@ -92,6 +96,10 @@ ul.nav.nav-tabs.nav-justified
 .li-header:hover
 {
     color: white;
+}
+
+.container.produits {
+    margin-left: -15px;
 }
 
 @media (min-width: 768px)
